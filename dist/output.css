@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 /*
-! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -33,12 +33,9 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
-7. Disable tap highlights on iOS
 */
 
-html,
-:host {
+html {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -48,14 +45,10 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
-  -webkit-tap-highlight-color: transparent;
-  /* 7 */
 }
 
 /*
@@ -127,10 +120,8 @@ strong {
 }
 
 /*
-1. Use the user's configured `mono` font-family by default.
-2. Use the user's configured `mono` font-feature-settings by default.
-3. Use the user's configured `mono` font-variation-settings by default.
-4. Correct the odd `em` font sizing in all browsers.
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
@@ -139,12 +130,8 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-feature-settings: normal;
-  /* 2 */
-  font-variation-settings: normal;
-  /* 3 */
   font-size: 1em;
-  /* 4 */
+  /* 2 */
 }
 
 /*
@@ -203,17 +190,11 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
   /* 1 */
   line-height: inherit;
-  /* 1 */
-  letter-spacing: inherit;
   /* 1 */
   color: inherit;
   /* 1 */
@@ -238,9 +219,9 @@ select {
 */
 
 button,
-input:where([type='button']),
-input:where([type='reset']),
-input:where([type='submit']) {
+[type='button'],
+[type='reset'],
+[type='submit'] {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -356,14 +337,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -605,7 +578,7 @@ p{
   overflow-y: hidden;
   --tw-backdrop-blur: blur(4px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   transition-duration: 700ms;
 }
 
@@ -623,9 +596,6 @@ p{
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -657,10 +627,6 @@ p{
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 ::backdrop{
@@ -677,9 +643,6 @@ p{
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-gradient-from-position:  ;
-  --tw-gradient-via-position:  ;
-  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -711,10 +674,6 @@ p{
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-  --tw-contain-size:  ;
-  --tw-contain-layout:  ;
-  --tw-contain-paint:  ;
-  --tw-contain-style:  ;
 }
 
 .container{
@@ -1050,10 +1009,6 @@ p{
   z-index: 50;
 }
 
-.col-span-2{
-  grid-column: span 2 / span 2;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -1092,10 +1047,6 @@ p{
   display: flex;
 }
 
-.table{
-  display: table;
-}
-
 .grid{
   display: grid;
 }
@@ -1108,32 +1059,28 @@ p{
   height: 18rem;
 }
 
-.h-screen{
-  height: 100vh;
-}
-
-.h-40{
-  height: 10rem;
-}
-
-.h-\[40rem\]{
-  height: 40rem;
-}
-
 .h-\[30rem\]{
   height: 30rem;
 }
 
-.h-\[20rem\]{
-  height: 20rem;
-}
-
-.h-\[50rem\]{
-  height: 50rem;
-}
-
 .h-\[45rem\]{
   height: 45rem;
+}
+
+.h-screen{
+  height: 100vh;
+}
+
+.h-20{
+  height: 5rem;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[10rem\]{
+  height: 10rem;
 }
 
 .w-72{
@@ -1152,24 +1099,16 @@ p{
   width: 100%;
 }
 
-.w-\[80\%\]{
-  width: 80%;
-}
-
-.max-w-96{
-  max-width: 24rem;
-}
-
 .max-w-\[25rem\]{
   max-width: 25rem;
 }
 
-.max-w-\[30rem\]{
-  max-width: 30rem;
-}
-
 .max-w-\[40rem\]{
   max-width: 40rem;
+}
+
+.resize-none{
+  resize: none;
 }
 
 .list-disc{
@@ -1204,6 +1143,10 @@ p{
   justify-content: space-between;
 }
 
+.gap-20{
+  gap: 5rem;
+}
+
 .gap-3{
   gap: 0.75rem;
 }
@@ -1212,24 +1155,12 @@ p{
   gap: 1.25rem;
 }
 
-.gap-20{
-  gap: 5rem;
-}
-
-.gap-10{
-  gap: 2.5rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
+.rounded-2xl{
+  border-radius: 1rem;
 }
 
 .rounded-3xl{
   border-radius: 1.5rem;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
 }
 
 .rounded-xl{
@@ -1290,22 +1221,19 @@ p{
   padding: 0.75rem;
 }
 
-.p-10{
-  padding: 2.5rem;
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
-.p-1{
-  padding: 0.25rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-10{
@@ -1318,6 +1246,11 @@ p{
   padding-bottom: 0.5rem;
 }
 
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1326,51 +1259,6 @@ p{
 .py-7{
   padding-top: 1.75rem;
   padding-bottom: 1.75rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.py-40{
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.px-20{
-  padding-left: 5rem;
-  padding-right: 5rem;
-}
-
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-14{
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.px-12{
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-11{
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.py-20{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .pb-1{
@@ -1395,10 +1283,6 @@ p{
 
 .pt-40{
   padding-top: 10rem;
-}
-
-.pt-5{
-  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -1450,11 +1334,6 @@ p{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hue-rotate-30{
-  --tw-hue-rotate: hue-rotate(30deg);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(178 57 32 / var(--tw-text-opacity));
@@ -1471,10 +1350,6 @@ p{
 }
 
 @media (min-width: 1024px){
-  .lg\:col-span-2{
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
@@ -1504,28 +1379,12 @@ p{
     width: 50rem;
   }
 
-  .lg\:w-full{
-    width: 100%;
-  }
-
-  .lg\:w-40{
-    width: 10rem;
-  }
-
-  .lg\:w-\[40rem\]{
-    width: 40rem;
-  }
-
-  .lg\:w-\[55rem\]{
-    width: 55rem;
-  }
-
-  .lg\:w-\[60rem\]{
-    width: 60rem;
-  }
-
   .lg\:w-\[70rem\]{
     width: 70rem;
+  }
+
+  .lg\:w-full{
+    width: 100%;
   }
 
   .lg\:max-w-\[40rem\]{
@@ -1536,24 +1395,8 @@ p{
     max-width: 60rem;
   }
 
-  .lg\:max-w-full{
-    max-width: 100%;
-  }
-
-  .lg\:max-w-\[50rem\]{
-    max-width: 50rem;
-  }
-
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-3{
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-\[1fr\]{
-    grid-template-columns: 1fr;
   }
 
   .lg\:grid-cols-\[1fr_2fr\]{

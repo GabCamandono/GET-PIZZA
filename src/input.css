@@ -74,7 +74,7 @@
     @apply w-20;
   }
   .offer__tab img.active {
-    @apply border-2 border-secondary p-1 rounded-full
+    @apply border-2 border-secondary p-1 rounded-full;
   }
   .offer__details {
     @apply hidden lg:hidden lg:max-w-[40rem] lg:mx-auto;
@@ -94,35 +94,63 @@
   .offer__cards--text ul {
     @apply mb-5 flex text-secondary justify-center;
   }
-  .story__item{
+  .story__item {
     @apply mb-5 max-w-[35rem] mx-auto;
   }
-  .story__item h4, .story__item i{
+  .story__item h4,
+  .story__item i {
     @apply bg-primary text-white px-3 py-2 font-bold duration-500 flex justify-between items-center cursor-pointer;
   }
   .story__item p {
     @apply bg-slate-50 h-auto max-h-0 overflow-hidden ease-in-out duration-500 text-justify px-3;
   }
-  .story__item i.open{
+  .story__item i.open {
     @apply rotate-[-180deg] duration-500;
   }
-  .story__item p.open{
+  .story__item p.open {
     @apply max-h-[50rem] bg-slate-50 duration-500 p-3;
   }
-  .feedback__clients{
-    @apply text-center
+  .feedback__clients {
+    @apply text-center;
   }
-  .feedback__clients img{
+  .feedback__clients img {
     @apply w-[5rem] rounded-full mx-auto;
   }
   .feedback__clients p {
     @apply my-5;
   }
-  /* .tns-outer {
+  .tns-outer {
     @apply overflow-hidden max-w-[25rem] mx-auto;
-  } */
-  .tns-outer button{
-    @apply hidden
+  }
+  .tns-outer button {
+    @apply hidden;
+  }
+  .btn.offer2 {
+    @apply border-r-white border py-0 rounded-none hover:text-primary lg:w-full;
+  }
+  .btn.offer2:last-child {
+    @apply border-none;
+  }
+  .btn.offer2.active {
+    @apply text-primary;
+  }
+  .offer2__details {
+    @apply hidden lg:hidden lg:max-w-[40rem] lg:mx-auto;
+  }
+  .offer2__details.active {
+    @apply block;
+  }
+  .offer2__cards {
+    @apply flex flex-col gap-5 justify-center items-center text-center py-10 border border-transparent rounded-xl lg:border-white lg:max-w-[40rem] lg:py-5;
+  }
+  .offer2__cards img {
+    @apply w-32;
+  }
+  .offer2__cards--text h4 {
+    @apply font-semibold;
+  }
+  .offer2__cards--text ul {
+    @apply mb-5 flex text-secondary justify-center;
   }
 }
 

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GET PIZZA</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../IMG/logoo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header
+      class="header py-5 fixed w-full z-50 bg-white shadow-[0_8px_24px_-15px_rgba(149,157,165,0.2)]"
+    >
+      <div class="container">
+        <div class="header__wrapper flex justify-between items-center">
+          <img class="w-[8rem]" src="../IMG/LOGO.png" alt="" />
+          <ul class="header__nav">
+            <li>
+              <a class="text-black/80 hover:text-primary" href="./home.html"
+                >HOME</a
+              >
+            </li>
+            <li>
+              <a class="text-black/80 hover:text-primary" href="./about.html"
+                >ABOUT</a
+              >
+            </li>
+            <li>
+              <a class="text-black/80 hover:text-primary" href="./menu.html"
+                >MENU</a
+              >
+            </li>
+            <li>
+              <a class="text-black/80 hover:text-primary" href="./contacts.html"
+                >CONTACTS</a
+              >
+            </li>
+          </ul>
+          <div class="toggle__menu">
+            <span class=""></span>
+            <span class=""></span>
+          </div>
+          <div class="backdrop"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Announcement -->
+    <section
+      class="announce fixed w-full z-40 bg-white pt-28 pb-1 text-center font-semibold text-primary leading-3"
+    >
+      <div class="container">
+        <div class="announce__wrappper">
+          <small
+            ><i class="fa-solid fa-bullhorn"></i> &nbsp; This website provides
+            information about our store. Online transactions are coming
+            soon.</small
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Banner -->
+    <section class="menuBanner">
+      <div
+        class="menuBanner__wrapper bg-bgMenu bg-cover bg-no-repeat h-screen w-full flex flex-col items-center justify-center"
+      >
+        <h1
+          class="text-white font-bold max-w-96 lg:text-center lg:max-w-[40rem]"
+        >
+          ALWAYS FRESH & READY TO BE SERVED.
+        </h1>
+      </div>
+    </section>
+
+    <!-- Menu Offer -->
+    <section class="offer2 py-10 bg-tertiary text-white">
+      <div class="container">
+        <div class="offer2__wrapper">
+          <!-- Offer2 Tab -->
+          <div class="offer2__tab flex justify-between py-5 px-2 items-center bg-secondary rounded-3xl text-tertiary font-bold text-center lg:max-w-[40rem] mx-auto">
+            <a class="btn offer2 active" id="tabs-1">PIZZA</a>
+            <a class="btn offer2" id="tabs-2">BURGER</a>
+            <a class="btn offer2" id="tabs-3">CHICKEN</a>
+            <a class="btn offer2" id="tabs-4">DRINKS</a>
+            <a class="btn offer2" id="tabs-5">CAKE</a>
+          </div>
+          <!-- Offer2 Content -->
+          <div class="offer2__content pt-10">
+            <!-- Pizza -->
+            <div class="offer2__details active" id="tabs-1-content">
+              <div class="offer2__details--wrap grid grid-cols-3 gap-3">
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/bbq pizza.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>BARBECUE PIZZA</h4>
+                    <p>$25.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Burger -->
+            <div class="offer2__details" id="tabs-2-content">
+              <div class="offer2__details--wrap grid grid-cols-3 gap-3">
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHEESE BURGER.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHEESE BURGER</h4>
+                    <p>$15.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Chicken -->
+            <div class="offer2__details" id="tabs-3-content">
+              <div class="offer2__details--wrap grid grid-cols-3 gap-3">
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/CHICKEN WITH BREAD.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>CHICKEN WITH BREAD</h4>
+                    <p>$45.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Drinks -->
+            <div class="offer2__details" id="tabs-4-content">
+              <div class="offer2__details--wrap grid grid-cols-3 gap-3">
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/ORANGE DRINK.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>ORANGE DRINK</h4>
+                    <p>$10.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Cake -->
+            <div class="offer2__details" id="tabs-5-content">
+              <div class="offer2__details--wrap grid grid-cols-3 gap-3">
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+                <div class="offer2__cards">
+                  <img src="../IMG/MUFFIN-CAKE.png" alt="" />
+                  <div class="offer2__cards--text">
+                    <h4>MUFFIN</h4>
+                    <p>$23.00</p>
+                    <ul>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                      <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <a class="btn bg-transparentt" href="./single__page.html">Read more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta bg-primary text-white py-10 lg:pb-0">
+      <div class="container">
+        <div
+          class="cta__wrapper flex flex-col items-center justify-center text-center lg:flex-row"
+        >
+          <img class="hidden lg:block lg:w-96" src="../IMG/chef.png" alt="" />
+          <div class="cta__details">
+            <h3 class="font-bold">LET'S CONNECT</h3>
+            <p class="mb-5">and get a 10% off bill offers and invites</p>
+            <div class="cta__input bg-white p-3">
+              <input
+                class="px-3 py-2 focus:text-black focus:outline-none"
+                type="text"
+                placeholder="YOUR EMAIL ADDRESS"
+              />
+              <a href="" class="btn bg-secondaryy">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-7">
+      <div class="container">
+        <div
+          class="footer__wrapper flex flex-col items-center justify-center text-center lg:gap-10"
+        >
+          <img class="mb-6" src="../IMG/LOGO.png" alt="" />
+          <div
+            class="footer__details flex flex-col gap-5 mb-5 lg:flex-row lg:gap-20"
+          >
+            <ul>
+              <li><h3 class="font-bold">ADDRESS</h3></li>
+              <li>
+                <p>
+                  570 8th Ave, New York, NY <br />
+                  10018 United States
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li><h3 class="font-bold">BOOK A TABLE</h3></li>
+              <li>
+                <p>
+                  Dogfood Och Sliders Foodtruck. <br />
+                  Under Om Oss Kan Ni Lasa
+                </p>
+              </li>
+            </ul>
+            <ul>
+              <li><h3 class="font-bold">OPENING HOURS</h3></li>
+              <li>
+                <p>
+                  Monday - Friday<br />
+                  10.00 AM - 11.00 PM
+                </p>
+              </li>
+            </ul>
+          </div>
+          <h4 class="text-primary">012345678987</h4>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/toggle__menu.js"></script>
+    <script src="./js/menu__tabs.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>
